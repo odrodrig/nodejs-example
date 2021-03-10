@@ -15,9 +15,8 @@ spec:
       labels:
         app: node-example
     spec:
-      serviceAccountName: pipeline-bot
       containers:
-        - image: core.oliver-openshift-4-5-2bef1f4b4097001da9502000c44fc2b2-0000.us-east.containers.appdomain.cloud/library/node-example:1
+        - image: core.oliver-openshift-4-5-2bef1f4b4097001da9502000c44fc2b2-0000.us-east.containers.appdomain.cloud/library/nodejs-example:3
           imagePullPolicy: Always
           name: node-example
           ports:
