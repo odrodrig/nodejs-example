@@ -52,13 +52,13 @@ spec:
       workspace: shared-workspace
     runAfter:
     - fetch-repository
-  - name: update-deployment
-    taskRef:
-      name: update-deployment
-    params:
-    - name: deployment
-      value: $(params.deployment-name)
-    - name: IMAGE
-      value: $(params.IMAGE)
-    runAfter:
-        - build-image
+  # - name: update-deployment
+  #   taskRef:
+  #     name: update-deployment
+  #   params:
+  #   - name: deployment
+  #     value: $(params.deployment-name)
+  #   - name: IMAGE
+  #     value: $(params.IMAGE)
+  #   runAfter:
+  #       - build-image
